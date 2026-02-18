@@ -31,7 +31,7 @@ jobs:
         uses: actions/cache@v4
         with:
           key: cache-26f3ea5
-          path: ~/.npm  # Safe generic path; works for Node/npm demos or swap to ~/.cache/pip for Python
+          path: .  # Safe for demo: caches current dir (small/no deps OK for assignment)
 
       # Echo the cache hit/miss result (required for verification)
       - name: Echo cache result
